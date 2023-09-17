@@ -14,8 +14,12 @@
 </head>
 
 <body>
+    <a href="zenMode.html">Zen Mode</a>
     <a-scene>
         <a-assets>
+            <!--icons-->
+            <img id="zen" src="assets/zen.png">
+
             <!--ground assets-->
             <img id="ground-diff" src="assets/terrain/asphalt_02_diff_4k.jpg">
             <img id="ground-disp" src="assets/terrain/asphalt_02_disp_4k.png">
@@ -31,10 +35,10 @@
         </a-assets>
         <!--<a-sky shader="preset: gradient; topColor:#c40808;bottomColor:#450707"></a-sky>
        -->
-        <a-sky color="#c40808"></a-sky>
+        <a-sky src="assets/sky/Digital_Painting_equirectangular-png_angry_office_with_empty_1713483665.png"></a-sky>
 
         <a-plane id="ground" color="#b3bdb6" scale="100 100 100" position="0 0 0.728" rotation="90 0 0" side="double"></a-plane>
-
+ 
         <a-entity id="binder3d" gltf-model="#binder" scale="0.1 0.1 0.1" position="0 0 1.36"
         event-set__destroy="__event: mouseenter; color:white"></a-entity>
         <a-entity id="cupboard3d" gltf-model="#cupboard" scale="0.01 0.01 0.01" position="0 0 0"></a-entity>
@@ -43,6 +47,8 @@
         <a-entity id="desk3d" gltf-model="#desk" scale="0.05 0.05 0.05" position="5 0 0.728"></a-entity>
         <a-entity id="chair3d" gltf-model="#chair" scale="9.228 9.228 9.228" position="4.558 0 9.003"></a-entity>
     
+        <a-link href="zenMode.html" title="zenMode" image="#zen"></a-link>
+
         <a-camera>
             <a-cursor></a-cursor>
         </a-camera>
